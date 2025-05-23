@@ -290,44 +290,44 @@ header .container nav ul {
 
 /* ------------------------------------------- */
 /* Featured Projects Section */
-#featured-projects {
+#featured-projects-section {
   padding: 2rem 0;
   min-height: 47.5rem;
   background-color: var(--lightgrey1);
 }
 
-#featured-projects .container h2 {
+#featured-projects-section .container h2 {
   font-size: 2.25rem;
   font-family: var(--font-playfair);
   font-weight: 700;
   text-align: center;
 }
 
-#featured-projects .container > p {
+#featured-projects-section .container > p {
   width: 50%;
   margin: 2rem auto;
 }
 
-#featured-projects .container .see-all-projects {
+#featured-projects-section .container .see-all-projects {
   width: fit-content;
   display: block;
   margin: 2rem auto;
 }
 
-#featured-projects .container .projects-flex-container {
+#featured-projects-section .container .projects-flex-container {
   display: flex;
   justify-content: space-around;
 }
 
 @media screen and (max-width: 767px) {
-  #featured-projects .container .projects-flex-container {
+  #featured-projects-section .container .projects-flex-container {
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
   }
 }
 
-#featured-projects .container .projects-flex-container .projet-card {
+#featured-projects-section .container .projects-flex-container .projet-card {
   width: 47%;
   background-color: var(--lightgrey1);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
@@ -336,16 +336,20 @@ header .container nav ul {
 }
 
 @media screen and (max-width: 767px) {
-  #featured-projects .container .projects-flex-container .projet-card {
+  #featured-projects-section .container .projects-flex-container .projet-card {
     width: 100%;
   }
 }
 
-#featured-projects .container .projects-flex-container .projet-card img {
+#featured-projects-section
+  .container
+  .projects-flex-container
+  .projet-card
+  img {
   width: 100%;
 }
 
-#featured-projects
+#featured-projects-section
   .container
   .projects-flex-container
   .projet-card
@@ -357,7 +361,7 @@ header .container nav ul {
   margin: 1rem auto;
 }
 
-#featured-projects
+#featured-projects-section
   .container
   .projects-flex-container
   .projet-card
@@ -371,7 +375,7 @@ header .container nav ul {
   margin: 1rem auto;
 }
 
-#featured-projects
+#featured-projects-section
   .container
   .projects-flex-container
   .projet-card
@@ -381,4 +385,118 @@ header .container nav ul {
   background-color: var(--lightgrey3);
   padding: 0.5rem;
   border-radius: 9999px;
+}
+
+/* ------------------------------------------- */
+/* Contact Me Section */
+#contact-me-section {
+  padding: 2rem;
+  min-height: 47.5rem;
+}
+
+#contact-me-section .container {
+  max-width: 42rem;
+}
+
+#contact-me-section .container > h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  text-align: center;
+}
+
+#contact-me-section .container > p {
+  margin: 2rem 0 4rem 0;
+}
+
+#contact-me-section .container > form {
+  background-color: var(--lightgrey1);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#contact-me-section .container > form .input-flexbox {
+  /* margin: 2rem; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-me-section .container > form .input-flexbox .input-flex-item {
+  width: 48%;
+}
+
+@media screen and (max-width: 767px) {
+  #contact-me-section .container > form .input-flexbox {
+    flex-direction: column;
+  }
+  #contact-me-section .container > form .input-flexbox .input-flex-item {
+    width: 100%;
+  }
+}
+
+#contact-me-section .container > form .input-flexbox .input-flex-item > label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#contact-me-section .container > form .input-flexbox .input-flex-item > input {
+  all: unset;
+  width: 100%;
+  border-radius: 6px;
+  height: 2rem;
+  background-color: white;
+  border: solid 1px var(--lightgrey3);
+}
+
+#contact-me-section .container > form .input-message {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+#contact-me-section .container > form .input-message > label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#contact-me-section .container > form .input-message > textarea {
+  all: unset;
+  width: 100%;
+  border-radius: 6px;
+  height: 9.125rem;
+  background-color: white;
+  border: solid 1px var(--lightgrey3);
+}
+
+#contact-me-section .container > form .rgpd-flexbox {
+  display: flex;
+  align-items: start;
+}
+
+#contact-me-section .container > form .rgpd-flexbox > input {
+  all: unset;
+  height: 1rem;
+  width: 1rem;
+  border: 3px solid var(--darkblue);
+  margin-top: 0.5rem;
+  border-radius: 3px;
+  /* margin-top: 1rem;
+  outline: 1rem solid var(--darkblue) */
+}
+
+@media screen and (max-width: 767px) {
+  #contact-me-section .container > form .rgpd-flexbox > input {
+    height: 1.5rem;
+    width: 1rem;
+    border-radius: 4px;
+  }
+}
+
+#contact-me-section .container > form .rgpd-flexbox > label {
+  padding: 0.5rem;
+}
+
+#contact-me-section .container > form > button {
+  margin: 1rem 0;
+  padding: 1rem 2.5rem;
+  border: none;
 }
