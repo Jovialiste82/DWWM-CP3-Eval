@@ -83,6 +83,11 @@ body {
   text-decoration: inherit;
 }
 
+.buffer {
+  height: 4rem;
+  background-color: var(--white1);
+}
+
 /* ------------------------------------------- */
 /* Header */
 

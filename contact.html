@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 <body>
-        <!-- Header -->
+    <!-- Header -->
     <header>
       <div class="container">
-        <a>Philippe Charpentier</a>
+        <a href="/">Philippe Charpentier</a>
         <nav>
           <ul>
             <li><a href="/">Accueil</a></li>
@@ -25,8 +25,49 @@
         </nav>
       </div>
     </header>
-    <main></main>
-        <!-- Footer -->
+    <!-- Main -->
+    <main>
+        <!-- Buffer -->
+        <div class="buffer"></div>
+        <!-- Contact Me Section -->
+        <section id="contact-me-section">
+        <div class="container">
+          <h2>Contactez-moi</h2>
+          <p>
+            Vous avez un projet en tête ou une question? N'hésitez pas à me
+            contacter, je vous répondrai dans les plus brefs délais.
+          </p>
+          <form action="#">
+            <div class="input-flexbox">
+              <div class="input-flex-item">
+                <label for="name">Nom</label>
+                <input type="text" name="name" />
+              </div>
+              <div class="input-flex-item">
+                <label for="email">Email</label>
+                <input type="text" name="email" />
+              </div>
+            </div>
+            <div class="input-message">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <div class="rgpd-flexbox">
+              <input type="checkbox" name="rgpd" />
+              <label for="rgpd"
+                >J'accepte que mes données soient traitées conformément à la
+                politique de confidentialité. Elles ne seront utilisées que pour
+                répondre à ma demande.</label
+              >
+            </div>
+
+            <button class="btn1">Envoyer le message</button>
+          </form>
+        </div>
+        </section>
+    </main>
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-flexbox">
