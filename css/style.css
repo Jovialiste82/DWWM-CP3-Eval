@@ -12,10 +12,11 @@
 /* Boot up and variables */
 :root {
   --black: rgba(51, 51, 51, 1);
-  --darkblue: rgba(45, 48, 71, 1);
   --white1: rgba(255, 255, 255, 1);
   --white2: rgba(255, 255, 255, 0.95);
   --green: rgba(65, 157, 120, 1);
+  --darkblue: rgba(45, 48, 71, 1);
+  --ultralightblue: rgba(209, 213, 219, 1);
   --lightgrey1: rgba(249, 250, 251, 1);
   --lightgrey2: rgba(156, 163, 175, 1);
   --lightgrey3: rgb(230, 231, 235);
@@ -499,4 +500,74 @@ header .container nav ul {
   margin: 1rem 0;
   padding: 1rem 2.5rem;
   border: none;
+}
+
+/* ------------------------------------------- */
+/* Footer */
+
+footer {
+  background-color: var(--darkblue);
+  height: 10.75rem;
+  width: 100vw;
+  padding: 1rem;
+}
+
+footer .container {
+  height: 100%;
+}
+
+footer .container .footer-flexbox {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .footer-flexbox .box1 > a {
+  font-family: var(--font-playfair);
+  color: var(--white1);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer .container .footer-flexbox .box1 > p {
+  color: var(--ultralightblue);
+  margin: 0.75rem 0;
+}
+
+footer .container .footer-flexbox .box2 > ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+footer .container .footer-flexbox .box2 > ul li {
+  color: var(--white1);
+  /* background-color: rgb(85, 84, 84); */
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 100%;
+}
+
+footer .container .footer-flexbox .box2 > ul li > a {
+  color: var(--white1);
+}
+
+footer .container .footer-flexbox .box2 > p {
+  color: var(--lightgrey2);
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: 19.5rem;
+  }
+  footer .container .footer-flexbox {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .container .footer-flexbox .box2 > ul {
+    justify-content: center;
+  }
 }
