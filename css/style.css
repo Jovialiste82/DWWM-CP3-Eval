@@ -319,6 +319,18 @@ header .container nav ul li a:hover {
 .skill-item.uxui {
   grid-area: uxui;
 }
+.skill-item.nodejs {
+  grid-area: nodejs;
+}
+.skill-item.php {
+  grid-area: php;
+}
+.skill-item.bdd {
+  grid-area: bdd;
+}
+.skill-item.wordpress {
+  grid-area: wordpress;
+}
 .skill-item.responsive {
   grid-area: responsive;
 }
