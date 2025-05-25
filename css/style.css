@@ -164,7 +164,7 @@ header .container nav ul li a:hover {
 #hero-section {
   height: 100vh;
   color: var(--white1);
-  background-image: var(--gradient1), url("assets/hero-img.jpg");
+  background-image: var(--gradient1), url("../assets/hero-img.jpg");
   background-position: center;
 }
 
